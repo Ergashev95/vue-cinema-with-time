@@ -262,9 +262,21 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+.films-card__content:hover {
+  cursor: pointer;
+}
+
+.films-card__content:hover .films-card__link {
+  transform: scale(1.4);
+}
+.films-card__content:hover .films-card__time {
+  transform: scale(0);
+}
 .films-card__link {
   color: var(--white);
   text-align: center;
+  transition: .5s;
 }
 
 .films-card__time {
@@ -282,6 +294,7 @@ ul {
   color: var(--white);
   margin-top: 12px;
   margin-bottom: 30px;
+  transition: .5s;
  
 }
 .films-card__title {
@@ -300,5 +313,43 @@ ul {
   font-family: var(--roboto);
   text-align: left;
 }
+
 /* FILMS */
+
+
+/* PRIMIER */
+
+.primier {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.primier-video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.primier-content {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0.00) 100.72%);
+}
+.primier-image {
+  margin-top: 42px;
+}
+.primier-text {
+  margin-top: 50px;
+  padding-bottom: 55px;
+  max-width: 558px;
+  width: 100%;
+  text-align: justify;
+  font-family: var(--roboto);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* PRIMIER */
 /* SITE-MAIN */
