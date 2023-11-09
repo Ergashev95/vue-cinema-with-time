@@ -352,4 +352,90 @@ ul {
 }
 
 /* PRIMIER */
+
+
+/* COLLECTIONS */
+.collections {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.collections-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.collections-card {
+  max-width: 350px;
+  width: 100%;
+  height: 193px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.collections-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.collections-content {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+.collections-link {
+  color: var(--white);
+  transition: .5s;
+  
+}
+
+.collections-content::before {
+  content: url(../img/Выбрать.png);
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  transition: .5s;
+}
+
+.collections-content::after {
+  content: url(../img/Выбрать.png);
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+  top: 6px;
+  transition: .5s;
+}
+
+.collections-content:hover .collections-link{
+  transform: scale(1.4);
+}
+.collections-content:hover .collections-name{
+  transform: scale(0);
+}
+.collections-content:hover::before {
+  transform: translateY(110%);
+}
+
+.collections-content:hover::after {
+  transform: translateY(-110%);
+}
+
+
+.collections-name {
+  color: var(--white);
+  font-family: var(--comfortaa);
+  font-size: 20px;
+  font-weight: 700;
+  transition: .5s;
+}
+/* COLLECTIONS */
 /* SITE-MAIN */
